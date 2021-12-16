@@ -1,7 +1,7 @@
 # Mô tả tập dữ liệu
 ## Nguồn dữ liệu: lấy từ trang kaggel
 * https://www.kaggle.com/spscientist/students-performance-in-exams
-* Tập dữ liệu gồm 8 cột và 1000 dongf
+* Tập dữ liệu gồm 8 cột và 1000 dòng
 ## Các thuộc tính của tập dữ liệu
 * gender: giới tính
 * race.ethnicity: chủng tộc 
