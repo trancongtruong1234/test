@@ -1,6 +1,6 @@
 def get_nameFile_current():
     import datetime
-    #File dữ liệu được lấy là file trước ngày hiện tại 1 ngày
+
     Previous_Date = datetime.datetime.today() - datetime.timedelta(days=1)
     Previous_Date = Previous_Date.strftime("%m-%d-%Y")
     print(Previous_Date)
@@ -20,10 +20,10 @@ def importCsvIntoMySQL(url,table_name):
 
 if __name__ == '__main__':
     file_name=get_nameFile_current()
-    # cập nhật dữ liệu vào database thế giới
+
     url_world='https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/'+file_name
     importCsvIntoMySQL(url_world,'COVID_19')
-    # Cập nhật dữ liệu vào database US
+
     url_us = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports_us/' + file_name
     importCsvIntoMySQL(url_us, 'data_covid_us')
 
